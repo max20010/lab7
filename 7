@@ -1,0 +1,42 @@
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int a, b, c, max, x1, x2;
+	cout << "Введите длину стороны A: ";
+	cin >> a;
+	cout << "Введите длину стороны B: ";
+	cin >> b;
+	cout << "Введите длину стороны C: ";
+	cin >> c;
+	if (a > b&&a > c) {
+		max = a;
+		x1 = b;
+		x2 = c;
+	}
+	else if (b > a&&b > c)
+	{
+		max = b;
+		x1 = a;
+		x2 = c;
+	}
+	else if (c > a&&c > b)
+	{
+		max = c;
+		x1 = b;
+		x2 = a;
+	}
+	max = max - x1 - x2;
+	if (max < 0) {
+		cout << "прямоугольник существует" << endl;
+	}
+	else
+	{
+		cout << "прямоугольник не существует" << endl;
+
+	}
+}
+
