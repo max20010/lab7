@@ -4,15 +4,18 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "ru");
-	int a;
+	int a,b,c;
 	cout << "Введите A: ";
-	cin >> a;
-
-	if (a>=10 && a<=99 && a%2==0) {
-		cout << "Данное число является чётным двузначным" << endl;
+	cin >> a;	
+	cout << "Введите B: ";
+	cin >> b;	
+	cout << "Введите C: ";
+	cin >> c;
+	if (a<b&&b<c) {
+		cout << "Справедливо двойное неравенство A<B<C" << endl;
 	}
 	else
 	{
-		cout << "Данное число не является чётным двузначным" << endl;
+		cout << "Двойное неравенство A<B<C не справедливо" << endl;
 	}
 }
